@@ -1,0 +1,10 @@
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\bin\Release\Draw2DObjects.exe.config
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.exe
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.pdb
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\bin\Release\Draw2DObjects.exe
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\bin\Release\Draw2DObjects.pdb
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.csprojResolveAssemblyReference.cache
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.SketchForm.resources
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.Welcome.resources
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.Properties.Resources.resources
+C:\Users\QCUONG98\documents\visual studio 2013\Projects\Draw2DObjects\Draw2DObjects\obj\Release\Draw2DObjects.csproj.GenerateResource.Cache
