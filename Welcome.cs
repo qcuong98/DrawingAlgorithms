@@ -19,7 +19,7 @@ namespace Draw2DObjects
             InitializeComponent();
 
             this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(100, 100);
+            this.Location = new Point(0, 100);
 
             labelAuthor.Font = new Font(labelAuthor.Font.Name, 20);
             labelTime.Font = new Font(labelTime.Font.Name, 15);

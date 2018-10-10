@@ -21,7 +21,7 @@ namespace Draw2DObjects
             InitializeComponent();
             g = this.CreateGraphics();
             this.StartPosition = FormStartPosition.Manual;
-            this.Location = new Point(700, 100);
+            this.Location = new Point(750, 100);
 
             this.ClientSize = new Size(WIDTH, HEIGHT);
         }
