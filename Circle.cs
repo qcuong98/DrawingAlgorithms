@@ -48,22 +48,21 @@ namespace Draw2DObjects
 
         protected override void MidPointRender(Graphics g)
         {
-            int x = r, y = 0;
-
-            int p = 1 - r;
-            while (x >= y)
+            int x = 0, y = r;
+            int d = 3 - 2 * r;
+            while (x <= y)
             {
                 Set8Pixels(g, Color.Green, x, y);
-                ++y;
+                ++x;
 
-                if (p > 0)
+                if (d > 0)
                 {
-                    p += 2 * y - 2 * x + 1;
-                    --x;
+                    d += 4 * (x - y) + 10;
+                    --y;
                 }
                 else
                 {
-                    p += 2 * y + 1;
+                    d += 4 * x + 6;
                 }
             }
         }
