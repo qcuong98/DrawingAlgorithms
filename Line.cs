@@ -17,6 +17,18 @@ namespace Draw2DObjects
             x0 = a; y0 = b; x1 = c; y1 = d;
         }
 
+        public override void Render(Graphics g, int idAlgo)
+        {
+            if (idAlgo == 0)
+                DDARender(g);
+            else if (idAlgo == 1)
+                BresenhamRender(g);
+            else if (idAlgo == 2)
+                MidPointRender(g);
+            else if (idAlgo == 3)
+                XiaolinWuRender(g);
+        }
+
         protected override void DDARender(Graphics g)
         {
             int dx = x1 - x0;
@@ -154,6 +166,47 @@ namespace Draw2DObjects
                     {
                         p += 2 * dx;
                     }
+                }
+            }
+        }
+
+        protected void XiaolinWuRender(Graphics g)
+        {
+            int dx = x1 - x0;
+            int dy = y1 - y0;
+
+            int steps = Math.Max(Math.Abs(dx), Math.Abs(dy));
+            double deltax = dx / (double)steps;
+            double deltay = dy / (double)steps;
+
+            if (Math.Abs(dx) > Math.Abs(dy))
+            {
+                int sign_x = (dx >= 0 ? 1 : -1);
+                for (int i = 0; i <= steps; ++i)
+                {
+                    int x_i = x0 + sign_x * i;
+                    double y_i = y0 + deltay * i;
+
+                    int ry_i = (int)y_i - (y_i > 0 ? 0 : 1);
+                    int p = (int)(255 * (y_i - ry_i));
+
+                    SketchForm.SetPixel(g, Color.FromArgb(255 - p, 0, 255 - p), x_i, ry_i);
+                    SketchForm.SetPixel(g, Color.FromArgb(p, 0, p), x_i, ry_i + 1);
+                }
+            }
+            else
+            {
+                int sign_y = (dy >= 0 ? 1 : -1);
+                for (int i = 0; i <= steps; ++i)
+                {
+                    int y_i = y0 + sign_y * i;
+                    double x_i = x0 + deltax * i;
+
+                    int rx_i = (int)x_i - (x_i > 0 ? 0 : 1);
+                    int p = (int)(255 * (x_i - rx_i));
+
+                    SketchForm.SetPixel(g, Color.FromArgb(255 - p, 0, 255 - p), rx_i, y_i);
+                    SketchForm.SetPixel(g, Color.FromArgb(p, 0, p), rx_i + 1, y_i);
                 }
             }
         }

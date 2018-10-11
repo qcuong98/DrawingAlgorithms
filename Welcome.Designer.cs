@@ -91,6 +91,7 @@
             this.textBoxNCircle = new System.Windows.Forms.TextBox();
             this.labelAuthor = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonLine
@@ -129,6 +130,7 @@
             this.textBoxX0.Name = "textBoxX0";
             this.textBoxX0.Size = new System.Drawing.Size(54, 20);
             this.textBoxX0.TabIndex = 1;
+            this.textBoxX0.Text = "-100";
             // 
             // textBoxY0
             // 
@@ -136,6 +138,7 @@
             this.textBoxY0.Name = "textBoxY0";
             this.textBoxY0.Size = new System.Drawing.Size(54, 20);
             this.textBoxY0.TabIndex = 2;
+            this.textBoxY0.Text = "-30";
             // 
             // textBoxY1
             // 
@@ -143,6 +146,7 @@
             this.textBoxY1.Name = "textBoxY1";
             this.textBoxY1.Size = new System.Drawing.Size(54, 20);
             this.textBoxY1.TabIndex = 4;
+            this.textBoxY1.Text = "40";
             // 
             // textBoxX1
             // 
@@ -150,6 +154,7 @@
             this.textBoxX1.Name = "textBoxX1";
             this.textBoxX1.Size = new System.Drawing.Size(54, 20);
             this.textBoxX1.TabIndex = 3;
+            this.textBoxX1.Text = "100";
             // 
             // label2
             // 
@@ -220,6 +225,7 @@
             this.textBoxR.Name = "textBoxR";
             this.textBoxR.Size = new System.Drawing.Size(54, 20);
             this.textBoxR.TabIndex = 18;
+            this.textBoxR.Text = "120";
             // 
             // textBoxYC
             // 
@@ -227,6 +233,7 @@
             this.textBoxYC.Name = "textBoxYC";
             this.textBoxYC.Size = new System.Drawing.Size(54, 20);
             this.textBoxYC.TabIndex = 17;
+            this.textBoxYC.Text = "0";
             // 
             // textBoxXC
             // 
@@ -234,6 +241,7 @@
             this.textBoxXC.Name = "textBoxXC";
             this.textBoxXC.Size = new System.Drawing.Size(54, 20);
             this.textBoxXC.TabIndex = 16;
+            this.textBoxXC.Text = "0";
             // 
             // label12
             // 
@@ -259,6 +267,7 @@
             this.textBoxXCEllipse.Name = "textBoxXCEllipse";
             this.textBoxXCEllipse.Size = new System.Drawing.Size(54, 20);
             this.textBoxXCEllipse.TabIndex = 22;
+            this.textBoxXCEllipse.Text = "0";
             // 
             // comboBoxLineAlgo
             // 
@@ -266,7 +275,8 @@
             this.comboBoxLineAlgo.Items.AddRange(new object[] {
             "DDA",
             "Bresenham",
-            "Mid Point"});
+            "Mid Point",
+            "Xiaolin Wu (Anit-aliased)"});
             this.comboBoxLineAlgo.Location = new System.Drawing.Point(544, 89);
             this.comboBoxLineAlgo.Name = "comboBoxLineAlgo";
             this.comboBoxLineAlgo.Size = new System.Drawing.Size(108, 21);
@@ -336,6 +346,7 @@
             this.textBoxAX2.Name = "textBoxAX2";
             this.textBoxAX2.Size = new System.Drawing.Size(54, 20);
             this.textBoxAX2.TabIndex = 34;
+            this.textBoxAX2.Text = "0.05";
             // 
             // buttonParabola
             // 
@@ -384,6 +395,7 @@
             this.textBoxXCHyperbola.Name = "textBoxXCHyperbola";
             this.textBoxXCHyperbola.Size = new System.Drawing.Size(54, 20);
             this.textBoxXCHyperbola.TabIndex = 42;
+            this.textBoxXCHyperbola.Text = "0";
             // 
             // buttonHyperbola
             // 
@@ -446,6 +458,7 @@
             this.textBoxYCEllipse.Name = "textBoxYCEllipse";
             this.textBoxYCEllipse.Size = new System.Drawing.Size(54, 20);
             this.textBoxYCEllipse.TabIndex = 23;
+            this.textBoxYCEllipse.Text = "0";
             // 
             // textBoxB
             // 
@@ -453,6 +466,7 @@
             this.textBoxB.Name = "textBoxB";
             this.textBoxB.Size = new System.Drawing.Size(54, 20);
             this.textBoxB.TabIndex = 25;
+            this.textBoxB.Text = "100";
             // 
             // textBoxA
             // 
@@ -460,6 +474,7 @@
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(54, 20);
             this.textBoxA.TabIndex = 24;
+            this.textBoxA.Text = "150";
             // 
             // label11
             // 
@@ -485,6 +500,7 @@
             this.textBoxBX.Name = "textBoxBX";
             this.textBoxBX.Size = new System.Drawing.Size(54, 20);
             this.textBoxBX.TabIndex = 35;
+            this.textBoxBX.Text = "0.0";
             // 
             // textBoxC
             // 
@@ -492,6 +508,7 @@
             this.textBoxC.Name = "textBoxC";
             this.textBoxC.Size = new System.Drawing.Size(54, 20);
             this.textBoxC.TabIndex = 36;
+            this.textBoxC.Text = "0.0";
             // 
             // label14
             // 
@@ -508,6 +525,7 @@
             this.textBoxYCHyperbola.Name = "textBoxYCHyperbola";
             this.textBoxYCHyperbola.Size = new System.Drawing.Size(54, 20);
             this.textBoxYCHyperbola.TabIndex = 43;
+            this.textBoxYCHyperbola.Text = "0";
             // 
             // textBoxBHyperbola
             // 
@@ -515,6 +533,7 @@
             this.textBoxBHyperbola.Name = "textBoxBHyperbola";
             this.textBoxBHyperbola.Size = new System.Drawing.Size(54, 20);
             this.textBoxBHyperbola.TabIndex = 45;
+            this.textBoxBHyperbola.Text = "40";
             // 
             // textBoxAHyperbola
             // 
@@ -522,6 +541,7 @@
             this.textBoxAHyperbola.Name = "textBoxAHyperbola";
             this.textBoxAHyperbola.Size = new System.Drawing.Size(54, 20);
             this.textBoxAHyperbola.TabIndex = 44;
+            this.textBoxAHyperbola.Text = "60";
             // 
             // label18
             // 
@@ -631,9 +651,9 @@
             this.labelAuthor.AutoSize = true;
             this.labelAuthor.Location = new System.Drawing.Point(8, 9);
             this.labelAuthor.Name = "labelAuthor";
-            this.labelAuthor.Size = new System.Drawing.Size(158, 13);
+            this.labelAuthor.Size = new System.Drawing.Size(208, 13);
             this.labelAuthor.TabIndex = 66;
-            this.labelAuthor.Text = "Created by qcuong98 10/10/18";
+            this.labelAuthor.Text = "Vùng hiển thị (x = -300..300, y = -200..200)";
             // 
             // labelTime
             // 
@@ -644,11 +664,21 @@
             this.labelTime.TabIndex = 67;
             this.labelTime.Text = "Thời gian vẽ: --";
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(625, 452);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(109, 13);
+            this.label29.TabIndex = 68;
+            this.label29.Text = "Created by qcuong98";
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(746, 474);
+            this.Controls.Add(this.label29);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelAuthor);
             this.Controls.Add(this.label28);
@@ -787,6 +817,7 @@
         private System.Windows.Forms.TextBox textBoxNCircle;
         private System.Windows.Forms.Label labelAuthor;
         private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Label label29;
     }
 }
 
